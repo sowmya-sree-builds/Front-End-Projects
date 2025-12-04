@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies | Sowmya's Hotstar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* NAVBAR */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ed0423;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav h2 {
+            margin: 0;
+        }
+
+        /* SECTION STYLING */
+        .genre-section {
+            margin: 30px 20px;
+        }
+
+        .genre-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #444;
+            padding-bottom: 6px;
+            color: #f5c400;
+        }
+
+        /* MOVIE GRID */
+        .movie-row {
+            display: flex;
+            flex-wrap: wrap;   /* <-- IMPORTANT: Movies wrap to next row */
+            gap: 20px;
+        }
+
+        .movie-card {
+            width: 200px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.06);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .movie-card p {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h2>Sowmya's Hotstar</h2>
+    </div>
+
+    <!-- ACTION -->
+    <section class="genre-section">
+        <h3 class="genre-title">Action</h3>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.PkMGykKIl0jREs9BkNptOAHaKg?w=202&h=287&c=7&r=0&o=7" />
+                <p>Bahubali 2</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.Y4o9cTXVoIgs_M7aV0jdlQHaLH?w=202&h=303&c=7&r=0&o=7" />
+                <p>RRR</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://www.chitramala.in/wp-content/uploads/2017/10/Saaho-Poster.jpg" />
+                <p>Sahoo</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.vicRDA4d4sO1F_J3FRcJZgHaLk?w=200&h=312&c=7&r=0&o=7" />
+                <p>Mirai</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.HjPtjxOXeo050381mV2JTgHaLh?w=200&h=311&c=7&r=0&o=7" />
+                <p>OG</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.ZjT5qxOoJV2USjL5XTKz_QHaLH?w=202&h=303&c=7&r=0&o=7" />
+                <p>Pushpa</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.qpHLTAzQ68PFYEEVTHZlgwHaJQ?cb=ucfimg2&pid=ImgDet&ucfimg=1&w=178&h=222&c=7&dpr=1.3&o=7&rm=3" />
+                <p>Devara</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.haQn7CGWS08f6Xug7S1QYgAAAA?w=115&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" />
+                <p>Hit - 3</p>
+            </div>
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.Zoo2V5pfbs0bQ4xzoZgr9AAAAA?w=126&h=184&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" />
+                <p>Kubera</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROMANCE -->
+    <section class="genre-section">
+        <h3 class="genre-title">Romance</h3>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.KfAReQctR02iLTgF0AAL3AAAAA?w=119&h=180&c=7&r=0&o=7" />
+                <p>Ninnu Kori</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.5tnSQDVW2TEplMRCsvMR2QHaLH?w=126&h=189&c=7&r=0&o=7" />
+                <p>Geetha Govindam</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THRILLER -->
+    <section class="genre-section">
+        <h3 class="genre-title">Thriller</h3>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.c_MngWXv43E2Fq2XXXwMrQHaLG?w=115&h=180&c=7&r=0&o=7" />
+                <p>Goodachari</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.S-H_Jh5NOebaxHRm3plm5wAAAA?w=202&h=282&c=7&r=0&o=7" />
+                <p>Kshanam</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORROR -->
+    <section class="genre-section">
+        <h3 class="genre-title">Horror</h3>
+        <div class="movie-row">
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.QOcUNh8yntR3DPy7sPASXwHaLH?w=202&h=303&c=7&r=0&o=7" />
+                <p>Masooda</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://th.bing.com/th/id/OIP.bKghs4ZA1saN4_hDCoVqVgHaKX?w=134&h=187&c=7&r=0&o=7" />
+                <p>Virupaksha</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Sowmya's Hotstar — All Rights Reserved 🍿
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sowmya Hotstar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        /* NAVIGATION */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ed0423;
+            padding: 10px 20px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .sub a {
+            display: inline-block;
+            margin: 0 12px;
+            padding: 6px 8px;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;             /* FIXED */
+            text-decoration: none;    /* removes underline + blue */
+        }
+
+        .sub a:hover {
+            text-decoration: underline;
+        }
+
+        /* MOBILE NAVIGATION */
+        @media (max-width: 600px) {
+            .sub a {
+                margin: 0 6px;
+                font-size: 12px;
+                padding: 4px;
+            }
+
+            .nav h3 {
+                font-size: 16px;
+            }
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(60%);
+        }
+
+        .hero-text {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                height: 200px;
+            }
+
+            .hero-text h1 {
+                font-size: 18px;
+            }
+
+            .hero-text p {
+                font-size: 12px;
+            }
+        }
+
+        .btn-warning {
+            padding: 10px 20px;
+            background-color: gold;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .hero .btn-warning {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* CARDS SECTION */
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            width: 260px;
+            border-radius: 15px;
+            overflow: hidden;
+            color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.04);
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* GENRES */
+        .genres {
+            padding: 20px;
+        }
+
+        .genres h2 {
+            margin-bottom: 15px;
+            font-size: 26px;
+            color: #f5c400;
+            text-align: center;
+        }
+
+        .genre-tags {
+            text-align: center;
+        }
+
+        .genre-tags span {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            background: linear-gradient(135deg, #ff0077, #6500ff);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: 0.25s ease;
+            box-shadow: 0 0 8px rgba(255, 0, 140, 0.5);
+        }
+
+        .genre-tags span:hover {
+            transform: scale(1.1);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <h3><b>Sowmya's Hotstar</b>✨🌟</h3>
+
+        <div class="sub">
+            <a href="#">Home</a>
+            <a href="./movies.html">Movies</a>
+            <a href="#">Shows</a>
+            <a href="#">Sports</a>
+            <a href="#">Login</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <img src="https://wallpapers.com/images/hd/poster-background-hlybuowt1whxbh2z.jpg" alt="Hero Background">
+        <div class="hero-text">
+            <h1>Unlimited Entertainment</h1>
+            <p>Watch your favourite shows, movies and live sports</p>
+        </div>
+        <button class="btn-warning">Explore Now</button>
+    </div>
+
+    <section class="cards">
+        <div class="card" style="background-color:#ff1744;">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.aGyphnWeipY9xSEPWP-afwHaEK?pid=ImgDet&w=178&h=100&c=7&dpr=1.3&o=7&rm=3" alt="Ninnu Kori">
+            <div class="card-body">
+                <h5 class="card-title">Ninnu Kori</h5>
+                <p class="card-text">A romantic emotional story beautifully portrayed on screen.</p>
+                <button class="btn-warning">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color:#2979ff;">
+            <img src="https://th.bing.com/th/id/OIP.zHoJ03RJVWQikBiZFYZWSAHaFj?w=241&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Bahubali 2">
+            <div class="card-body">
+                <h5 class="card-title">Bahubali 2</h5>
+                <p class="card-text">A powerful saga of revenge, legacy, and justice.</p>
+                <button class="btn-warning">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color:#00c853;">
+            <img src="https://th.bing.com/th/id/OIP.pSGBhthCW6pJDTF24jZZaQHaEc?w=308&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Mahanati">
+            <div class="card-body">
+                <h5 class="card-title">Mahanati</h5>
+                <p class="card-text">The inspiring biopic of legendary actress Savitri.</p>
+                <button class="btn-warning">Watch Now</button>
+            </div>
+        </div>
+
+        <div class="card" style="background-color:#ff9100;">
+            <img src="https://th.bing.com/th/id/OIP.T5epwPlbefX8tA4xf_aGywHaE8?w=221&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Antariksham">
+            <div class="card-body">
+                <h5 class="card-title">Antariksham 9000 KMPH</h5>
+                <p class="card-text">A thrilling Telugu sci-fi space adventure.</p>
+                <button class="btn-warning">Watch Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="genres">
+        <h2>Popular Genres</h2>
+        <div class="genre-tags">
+            <span>Action</span>
+            <span>Comedy</span>
+            <span>Drama</span>
+            <span>Horror</span>
+            <span>Romance</span>
+            <span>Thriller</span>
+            <span>Science Fiction</span>
+            <span>Kids</span>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Sowmya's Hotstar — All Rights Reserved 🍿
+    </footer>
+
+</body>
+
+</html>
